@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Planet Picker 🌍👌 | Text/Number Transitions &amp; Circular SVG Nav Tutorial | @keyframers 2.10.0</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/splitting@1.0.6/dist/splitting.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+<div id="app" data-current-planet="mercury">
+
+  <nav class="planet-nav">
+    <svg viewBox="0 20 400 400" xmlns="http://www.w3.org/2000/svg">
+
+<!--       <defs> -->
+        <path 
+            id="navPath" 
+            d="M10,200 C30,-28 370,-28 390,200"
+            fill="none" />
+<!--       </defs> -->
+
+      <text>
+        <textPath href="#navPath" startOffset="0" font-size="10">
+          <tspan>Mercury</tspan>
+          <tspan>Venus</tspan>
+          <tspan>Earth</tspan>
+          <tspan>Mars</tspan>
+          <tspan>Jupiter</tspan>
+          <tspan>Saturn</tspan>
+          <tspan>Uranus</tspan>
+          <tspan>Neptune</tspan>
+        </textPath>
+      </text>
+
+    </svg>
+  </nav>
+
+  <div class="planet" data-planet="mercury" data-active>
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Mercury</h1></a>
+      <p class="planet-description">Tiny and close to the sun. <br> -Smallest terrestrial planet
+        no (significant) atmosphere, dramatic shifts in temp <br> -0.4 AU from the sun<br>
+        -Small magnetic field present
+      </p>
+<!--      <ul>-->
+<!--        <li>semi-major axis:  0.39 AU</li>-->
+<!--        <li>mass:  0.06 ME</li>-->
+<!--        <li>Mercury in a 3:2 resonance of rotation:revolution</li>-->
+<!--        <li>Result?  Mercury’s solar day = 2 of its years!</li>-->
+<!--        <li>resonance is due to tidal effects  Mercury almost tidally locked!</li>-->
+<!--        <li>smallest terrestrial planet</li>-->
+<!--        <li>no (significant) atmosphere, dramatic shifts in temp</li>-->
+<!--        <li>magnetic field present (but small)</li>-->
+
+
+
+<!--      </ul>-->
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ᵈᵃʸˢ">
+        88
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        5.4
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ᵈᵃʸˢ">
+        58.6
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img class="imagestyle2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/1_mercury.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="venus">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Venus</h1></a>
+      <p class="planet-description">A planet of razors and tennis players.<br>
+        -Atmospheric pressure 90x that of Earth<br>
+        -Surface temp day and night:  900° F <br>
+
+        -No magnetic field<br>
+        -Sulfuric acid rain in high clouds
+
+      </p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ᵈᵃʸˢ">
+        225
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        5.2
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ᵈᵃʸˢ">
+        -243
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/2_venus.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="earth">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Earth</h1></a>
+      <p class="planet-description">Voted best planet in the Solar System by all organisms.</p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ᵈᵃʸˢ">
+        365
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        7.3
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ʰᵒᵘʳˢ">
+        23.9
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/3_earth.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="mars">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Mars</h1></a>
+      <p class="planet-description">How to colonise Mars: :M:a:r:s:<br> -thin atmosphere:  0.6% atmospheric pressure on Earth
+        (95% CO2) <br>
+        -Soil rich in iron;  Mars is rusty <br>
+        -Sizeable polar ice caps  (CO2, H2O) <br>
+        -2 tiny moons (Phobos, Deimos)
+      </p>
+
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ᵈᵃʸˢ">
+        687
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        3.93
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ʰᵒᵘʳˢ">
+        24.5
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/4_mars.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="jupiter">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Jupiter</h1></a>
+      <p class="planet-description">Twice as massive as the other planets combined. <br>
+        -Strongest planetary magnetic field<br>
+        -Similar in composition to sun<br>
+        -80+ moons<br>
+
+      </p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ʸᵉᵃʳˢ">
+        11.9
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        1.3
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ʰᵒᵘʳˢ">
+        9.9
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/5_jupiter.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="saturn">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Saturn</h1></a>
+
+      <p class="planet-description">A name with a nice ring to it.<br>
+        -Least dense planet  (floating on water)<br>
+
+        -Most oblate planet (10% wider at equator)<br>
+        -83+ moons
+
+      </p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ʸᵉᵃʳˢ">
+        29.4
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        .687
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ʰᵒᵘʳˢ">
+        10.7
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img class="imagestyle1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/6_saturn.jpg" />
+    </figure>
+  </div>
+
+  <div class="planet" data-planet="uranus">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Uranus</h1></a>
+      <p class="planet-description">Insert Marks favorite joke here.<br>
+        -Tilted 97° on its axis<br>
+        -27 moons named after works of Shakespeare and A. Pope<br>
+        -Coldest planet
+
+      </p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ʸᵉᵃʳˢ">
+        84
+      </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        1.27
+      </div>
+      <div class="detail" data-detail="hours" data-postfix="ʰᵒᵘʳˢ">
+        17.24
+      </div>    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/7_uranus.jpg" />
+    </figure>
+  </div>
+
+
+  <div class="planet" data-planet="neptune">
+    <div class="planet-title">
+      <a href="http://www.wikipedia.com"><h1>Neptune</h1></a>
+      <p class="planet-description">The other blue planet.<br>
+        -Densest of giant planets <br>
+        -Great Dark Spot  (and Scooters!)<br>
+        -13 moons<br>
+        -Strongest winds in the solar system
+      </p>
+    </div>
+
+    <div class="planet-details">
+      <div class="detail" data-detail="tilt" data-postfix="ʸᵉᵃʳˢ">
+        165     </div>
+      <div class="detail" data-detail="gravity" data-postfix="ᵍˡᶜᵐ³">
+        1.64      </div>
+      <div class="detail" data-detail="hours" data-postfix="ʰᵒᵘʳˢ">
+        16.11
+      </div>
+    </div>
+
+    <figure class="planet-figure">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1188/8_neptune.jpg" />
+    </figure>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/splitting@1.0.6/dist/splitting.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
